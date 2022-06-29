@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main(){
+	
+	int tempoT = 0;
+	float massaI, massaF;
+	
+	printf("Digite em gramas a massa inicial: \n");
+	scanf("%f", &massaI);
+	
+	massaF = massaI;
+	while(massaF >= 0.5){
+	    massaF = massaF / 2;
+	    tempoT += 50;
+	}
+	printf("\n");
+	printf("Massa Inicial: %2.0f gramas.\n", massaI);
+	printf("Massa Final: %.2f gramas; \n", massaF);
+	printf("Tempo Total: %d segundos. \n", tempoT);
+}
